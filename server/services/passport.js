@@ -7,6 +7,7 @@ const ExtractJwt = require('passport-jwt').ExtractJwt;
 // Setup options for JWT Strategy
 const jwtOptions = {
     jwtFromRequest: ExtractJwt.fromHeader('authorization'),//creates a new extractor that looks for the JWT in the given http header
+    // in postman try Get to '/' and in Headers insert 'authorization' | 'eyJ0eXAiO...' and respons {"hi": "there"}
     secretOrKey: config.secret
 };
 
