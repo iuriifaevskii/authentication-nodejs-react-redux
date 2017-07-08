@@ -7,7 +7,7 @@ export default class App extends Component {
     return (
       <div>
         <Header />
-        authentication react redux
+        {this.props.children}
       </div>
     );
   }
