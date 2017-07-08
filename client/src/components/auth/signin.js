@@ -4,6 +4,8 @@ import { reduxForm } from 'redux-form';
 class Signin extends Component {
     handleSubmit({email,password}){
         console.log(email,password);
+        //Need to do something to log user in
+        
     }
 
     render(){
